@@ -23,21 +23,21 @@
 #     print(f"Площадь: {a * b}")
 # else:
 #     print(f"Периметр: {a * 2 + b * 2}")
-import string
+# import string
 
-print('Калькулятор ИМТ')
-while True:
-    w = input('Введите свой вес (кг): ')
-    h = input('Введите свой рост (см): ')
-    try:
-        w = float(w)
-        h = float(h)
-        if w > 0 and h > 0:
-            break
-        print('вес и рост не могут быть 0 :_')
-    except ValueError:
-        print('Нужно ввести числа!')
-print(f'твой ИМТ: {(w / ((h/100)**2)):.1f}')
+# print('Калькулятор ИМТ')
+# while True:
+#     w = input('Введите свой вес (кг): ')
+#     h = input('Введите свой рост (см): ')
+#     try:
+#         w = float(w)
+#         h = float(h)
+#         if w > 0 and h > 0:
+#             break
+#         print('вес и рост не могут быть 0 :_')
+#     except ValueError:
+#         print('Нужно ввести числа!')
+# print(f'твой ИМТ: {(w / ((h/100)**2)):.1f}')
 
 # import string
 # print('Конвертер систем счисления')
@@ -98,20 +98,20 @@ print(f'твой ИМТ: {(w / ((h/100)**2)):.1f}')
 # print("кол-во букв: " + str(count_letters), "кол-во цифр: " + str(count_numbers), "кол-во знаков: " + str(count_punct), "кол-во пробелов: " + str(s.count(' ')), sep='\n')
 
 
-# import datetime
-# print('Работа с датой')
-#
-# while True:
-#     y = input('Введите год рождения: ')
-#     m = input('Введите месяц рождения: ')
-#     d = input('Введите день рождения: ')
-#     try:
-#         y, m, d = int(y), int(m), int(d)
-#         break
-#     except:
-#         print('Введите целые числа')
-#
-# d1 = datetime.date(y,m,d)
-# now = datetime.date.today()
-# print("Вам " + str(int((now - d1).days / 365)) + " годиков")
+import datetime
+print('Работа с датой')
+
+while True:
+    y = input('Введите год рождения: ')
+    m = input('Введите месяц рождения: ')
+    d = input('Введите день рождения: ')
+    try:
+        y, m, d = int(y), int(m), int(d)
+        break
+    except:
+        print('Введите целые числа')
+
+d1 = datetime.date(y,m,d)
+now = datetime.date.today()
+print("Вам " + str(int((now - d1).days / 365)) + " годиков")
 
